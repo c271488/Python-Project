@@ -8,5 +8,5 @@ Add some files
 
 ## 05/24
 Modified some files and add gui.py
-* ~~inputChecker.py~~ deleated
+* ~~inputChecker.py~~ deleted
 * gui.py: 使用者介面相關

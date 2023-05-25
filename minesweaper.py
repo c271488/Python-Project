@@ -26,9 +26,9 @@ class MineSweaper(GUI):
         def left_click_event(event):
             if not self.__grid.clickable(x, y): return
 
-            if self.__grid.is_mine(x, y):
-                pass
-                # TODO: lose
+            if self.__grid.is_mine(x, y): # lose   
+                self.show_messagebox("You Lose","Game Over")
+                self.close_window()
 
             # first click, generate the grid
             if self.__first_click:
@@ -43,8 +43,8 @@ class MineSweaper(GUI):
                 self.update_button_status(px, py, status, data)
 
             if self.win():
-                # TODO: win
-                pass
+                self.show_messagebox("You Win","Congratulations")
+                self.close_window()
 
         return left_click_event
 

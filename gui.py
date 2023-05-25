@@ -1,3 +1,4 @@
+from tkinter import messagebox
 import tkinter as tk
 
 class GUI:
@@ -41,4 +42,10 @@ class GUI:
             self.button_grid[x][y].config(state=tk.DISABLED, bg="#E7E7E7", fg="blue")
         else: # flagged
             text = "!"
-        self.button_grid[x][y].config(text = text, font="sans 9 bold")
+        self.button_grid[x][y].config(text = text, font="sans 9 bold", fg="red")
+
+    def show_messagebox(self, title, message):
+        messagebox.showinfo(title, message)
+        
+    def close_window(self):
+        self.window.destroy()

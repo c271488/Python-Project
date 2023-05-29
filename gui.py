@@ -6,7 +6,7 @@ class GUI:
     def __init__(self, n):
         self.window = tk.Tk()
         self.window.title('Minesweeper') # form title
-        self.window.geometry('360x360')  # form size
+        self.window.geometry('340x370')  # form size
         self.button_grid=[]              # 2d array for storing buttons
         self.generate_button_grid(n)
 
@@ -14,7 +14,7 @@ class GUI:
         for i in range(n):
             self.button_grid.append([])
             for j in range(n):
-                button = tk.Button(self.window, height=1, width=2, bg="#D7D7D7") # bg = background yor
+                button = tk.Button(self.window, height=2, width=4, bg="#D7D7D7") # bg = background yor
                 button.grid(row=i, column=j)                                     # set the positon of button
                 button.bind("<Button-1>", self.left_click(i, j))                 # left click event
                 button.bind("<Button-3>", self.right_click(i, j))                # right click event

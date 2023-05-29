@@ -11,7 +11,7 @@ class Grid:
         self.__status = [[0 for i in range(size)]for j in range(size)] # = 0 -> unvisited, = 1 -> visited, = -1 -> flagged
         self.__count = 0 # count how much points are visited
 
-    def __str__(self):
+    def __str__(self): # for debug
         output = ""
         cur = 0
         for i in range(0, self.__size):

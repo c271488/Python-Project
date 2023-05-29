@@ -11,6 +11,7 @@ class GUI:
         self.generate_button_grid(n)
 
     def generate_button_grid(self, n):
+        '''generate the buttons'''
         for i in range(n):
             self.button_grid.append([])
             for j in range(n):
@@ -45,6 +46,7 @@ class GUI:
         self.button_grid[x][y].config(text = text, font="sans 9 bold", fg="red")
 
     def show_messagebox(self, title, message):
+        '''show the win/lose message'''
         messagebox.showinfo(title, message)
         
     def close_window(self):

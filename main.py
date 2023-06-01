@@ -1,7 +1,7 @@
 from minesweapers import MineSweaper
 
 def main():
-    t = MineSweaper()
-    t.run()
+    game = MineSweaper()
+    game.run()
 
 if __name__ == "__main__": main()

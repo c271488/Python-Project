@@ -1,5 +1,5 @@
-from grid import Grid
-from gui import GUI
+from .grid import Grid
+from .gui import GUI
 
 class MineSweaper(GUI):
     __SIZE = 9

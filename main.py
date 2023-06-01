@@ -1,4 +1,4 @@
-from minesweaper import MineSweaper
+from minesweapers import MineSweaper
 
 def main():
     t = MineSweaper()
